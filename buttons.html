@@ -1,15 +1,84 @@
 <style>
-  button { 
+  .subscribe-button { 
     background-color:rgb(200, 0, 0);
     color: white;
     border: none;
     height: 36px;
     width: 115px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity .2s;
+  }
+
+  .subscribe-button:hover {
+    opacity:0.6;
+
+  }
+
+  .subscribe-button:active {
+    opacity:0.5;
+
+  }
+
+  .join-button {
+    background-color: white;
+    border-color: rgb(0, 100, 231);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(0, 100, 231);
+    height: 36px;
+    width: 62px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color .4s, color .4s;
+
+  }
+
+  .join-button:hover {
+    background-color:rgb(0, 100, 231);
+    color: white;
+  }
+
+  .join-button:active {
+    opacity: 0.5;
+
+  }
+
+  .tweet-button {
+    background-color:rgb(0, 153, 255);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 74px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: box-shadow .3s;
+  }
+
+  .tweet-button:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404);
+    
   }
 </style>
 
-<a href="https://www.youtube.com/channel/UCZS8yqE_Cj5W48eaqNmIkmg" target="_blank"> 
-<button>
-  SUBSCRIBE
-</button>
+<a href="https://www.youtube.com/channel/UCZS8yqE_Cj5W48eaqNmIkmg" target="_blank" style="text-decoration: none" >
+  <button class="subscribe-button">
+    SUBSCRIBE
+  </button>
+</a>
+
+<a href="https://cdn.discordapp.com/attachments/911011023799058463/1119634003268468797/1cdd74bd3b067be22ee2861f286131d2.png" target="_blank" style="text-decoration: none">
+  <button class="join-button">
+    JOIN
+  </button>
+</a>
+
+<a href="https://twitter.com/compose/tweet" target="_blank" style="text-decoration: none">
+  <button class="tweet-button">
+    Tweet
+  </button>
 </a>
